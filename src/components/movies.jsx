@@ -2,6 +2,9 @@ import React, { Component } from "react";
 import { getMovies } from "../services/fakeMovieService";
 
 class Movies extends Component {
+  state = {
+    movies: getMovies(),
+  };
   render() {
     return (
       <table className="table">
@@ -14,12 +17,14 @@ class Movies extends Component {
           </tr>
         </thead>
         <tbody>
-          <tr>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-          </tr>
+          {this.state.movies.map((movie) => (
+            <tr>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+          ))}
         </tbody>
       </table>
     );
