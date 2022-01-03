@@ -1,6 +1,7 @@
 import React, { Component } from "react";
+import { getMovies } from "../services/fakeMovieService";
 
-class Movies extends React.Component {
+class Movies extends Component {
   render() {
     return (
       <table className="table">
