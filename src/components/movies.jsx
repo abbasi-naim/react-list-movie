@@ -18,10 +18,10 @@ class Movies extends Component {
         <tbody>
           {this.state.movies.map((movie) => (
             <tr>
-              <td key={movie}>{movie.title}</td>
-              <td></td>
-              <td></td>
-              <td></td>
+              <td>{movie.title}</td>
+              <td>{movie.genre.name}</td>
+              <td>{movie.numberInStock}</td>
+              <td>{movie.dailyRentalRate}</td>
             </tr>
           ))}
         </tbody>
