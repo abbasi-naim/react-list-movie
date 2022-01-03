@@ -2,9 +2,8 @@ import React, { Component } from "react";
 import { getMovies } from "../services/fakeMovieService";
 
 class Movies extends Component {
-  state = {
-    movies: getMovies(),
-  };
+  state = { movies: getMovies() };
+
   render() {
     return (
       <table className="table">
@@ -19,7 +18,7 @@ class Movies extends Component {
         <tbody>
           {this.state.movies.map((movie) => (
             <tr>
-              <td></td>
+              <td key={movie}>{movie.title}</td>
               <td></td>
               <td></td>
               <td></td>
