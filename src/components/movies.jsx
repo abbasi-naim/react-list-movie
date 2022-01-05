@@ -10,6 +10,7 @@ class Movies extends Component {
   };
 
   render() {
+    const { length: count } = this.state.movies.length;
     return (
       <table className="table">
         <thead>
