@@ -5,7 +5,7 @@ class Movies extends Component {
   state = { movies: getMovies() };
 
   handleDelete = (movie) => {
-    console.log(movie);
+    const movies = this.state.movies.filter((m) => m._id !== movie._id);
   };
 
   render() {
