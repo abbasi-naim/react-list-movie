@@ -4,9 +4,7 @@ import { getMovies } from "../services/fakeMovieService";
 class Movies extends Component {
   state = { movies: getMovies() };
 
-  handleDelete = (movie) => {
-
-  }
+  handleDelete = (movie) => {};
 
   render() {
     return (
@@ -29,7 +27,7 @@ class Movies extends Component {
               <td>{movie.dailyRentalRate}</td>
               <td>
                 <button
-                  onClick={this.handleDelete}
+                  onClick={() => this.handleDelete(movie)}
                   className="btn btn-danger btn-sm"
                 >
                   Delete
