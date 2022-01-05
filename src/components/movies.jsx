@@ -4,7 +4,9 @@ import { getMovies } from "../services/fakeMovieService";
 class Movies extends Component {
   state = { movies: getMovies() };
 
-  handleDelete = (movie) => {};
+  handleDelete = (movie) => {
+    console.log(movie);
+  };
 
   render() {
     return (
