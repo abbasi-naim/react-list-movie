@@ -1,5 +1,6 @@
 import React, { Component, Fragment } from "react";
 import { getMovies } from "../services/fakeMovieService";
+import Like from "./common/like";
 
 class Movies extends Component {
   state = { movies: getMovies() };
