@@ -10,6 +10,10 @@ class Movies extends Component {
     this.setState({ movies });
   };
 
+  handleLike = () => {
+    
+  }
+
   render() {
     const { length: count } = this.state.movies;
 
