@@ -1,6 +1,8 @@
 import React, { Component } from "react";
 
 const Pagination = (props) => {
+  const { itemsCount, pageSize } = props;
+  const pagesCount = itemsCount / pageSize;
   return (
     <nav>
       <ul className="pagination">
