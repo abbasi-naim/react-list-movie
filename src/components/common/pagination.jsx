@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import _ from "lodash";
 
 const Pagination = (props) => {
   const { itemsCount, pageSize } = props;
